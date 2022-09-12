@@ -6,7 +6,7 @@
       'Lucida Sans', Arial, sans-serif;
   }
   
-  body {
+  /* body {
     background: linear-gradient(
       90deg,
       rgba(48, 16, 255, 1) 0%,
@@ -144,5 +144,146 @@
   
   .edit-icon {
     color: #fff;
+  } */
+  
+  /* second theme */
+
+  body {
+    background: linear-gradient(
+      90deg,
+      rgb(73, 73, 73) 0%,
+      rgb(134, 134, 134) 100%
+    );
+  }
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: #242424;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
   }
   
+  h1 {
+    margin: 32px 0;
+    color: rgb(235, 235, 235);
+    font-size: 24px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #dadada;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #dadada;
+  }
+  
+  .todo-input::placeholder {
+    color: #e2e2e2;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      100deg,
+      #dadada 0%,
+      #9c9c9c 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .todo-input.edit {
+    border: 2px solid #dadada;
+  }
+  
+  .todo-button.edit {
+    background: linear-gradient(
+      100deg,
+      #dadada 0%,
+      #9c9c9c 100%
+    );
+    padding: 16px 22px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      100deg,
+      #acacac 0%,
+      #5a5a5a 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .todo-row:nth-child(4n + 1) {
+    background: linear-gradient(
+      100deg,
+      #acacac 0%,
+      #5a5a5a 100%
+    );
+  }
+  
+  .todo-row:nth-child(4n + 2) {
+    background: linear-gradient(
+      100deg,
+      #acacac 0%,
+      #5a5a5a 100%
+    );
+  }
+  
+  .todo-row:nth-child(4n + 3) {
+    background: linear-gradient(
+      100deg,
+      #5a5a5a 0%
+      #acacac 100%,
+    );
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .edit-icon {
+    color: #fff;
+  }
