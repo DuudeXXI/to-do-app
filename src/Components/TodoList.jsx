@@ -30,9 +30,10 @@ const TodoList = () => {
         if(!newValue.text || /^\s*$/.test(newValue.text)) {
             return
         }
-        setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)))
-        localStorage.setItem("todo", JSON.stringify(todos))
-        console.log(todos);
+        const newTodos = todos.map(item => (item.id === todoId ? newValue : item))
+        setTodos(newTodos)
+        localStorage.setItem("todo", JSON.stringify(newTodos))
+        console.log(newTodos);
     }
     // DELETE
     const removeTodo = id => {
